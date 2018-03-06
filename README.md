@@ -3,6 +3,8 @@
 metabeiwe
 =========
 
+[![Build Status](https://travis-ci.org/mkiang/metabeiwe.svg?branch=master)](https://travis-ci.org/mkiang/metabeiwe)
+
 A small esoteric package designed to analyze metadata collected through the [Beiwe Research Platform](https://www.hsph.harvard.edu/onnela-lab/beiwe-research-platform/).
 
 Introduction

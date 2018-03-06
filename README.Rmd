@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 # metabeiwe
 
-A small esoteric package designed to work with data collected from the [Beiwe Research Platform](https://www.hsph.harvard.edu/onnela-lab/beiwe-research-platform/). 
+A small esoteric package designed to analyze metadata collected through the [Beiwe Research Platform](https://www.hsph.harvard.edu/onnela-lab/beiwe-research-platform/). 
 
 ## Introduction
 
@@ -36,5 +36,3 @@ TODO
 
 ## Authors
 - [Mathew Kiang](https://mathewkiang.com) (![Github](http://i.imgur.com/9I6NRUm.png): [mkiang](https://github.com/mkiang) | ![Twitter](http://i.imgur.com/wWzX9uB.png): [\@mathewkiang](https://twitter.com/mathewkiang))
-
-

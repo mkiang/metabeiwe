@@ -3,7 +3,7 @@
 metabeiwe
 =========
 
-A small esoteric package designed to work with data collected from the [Beiwe Research Platform](https://www.hsph.harvard.edu/onnela-lab/beiwe-research-platform/).
+A small esoteric package designed to analyze metadata collected through the [Beiwe Research Platform](https://www.hsph.harvard.edu/onnela-lab/beiwe-research-platform/).
 
 Introduction
 ------------

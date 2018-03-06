@@ -14,7 +14,8 @@ knitr::opts_chunk$set(
 ```
 # metabeiwe
 
-[![Build Status](https://travis-ci.org/mkiang/metabeiwe.svg?branch=master)](https://travis-ci.org/mkiang/metabeiwe)
+[![Build Status](https://travis-ci.org/mkiang/metabeiwe.svg?branch=master)](https://travis-ci.org/mkiang/metabeiwe) [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/j3qf7bl8s5tsei0f?svg=true)](https://ci.appveyor.com/project/mkiang/metabeiwe)
+
 
 A small esoteric package designed to analyze metadata collected through the [Beiwe Research Platform](https://www.hsph.harvard.edu/onnela-lab/beiwe-research-platform/). 
 

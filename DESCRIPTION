@@ -1,0 +1,17 @@
+Package: metabeiwe
+Type: Package
+Title: Analyze metadata collected using the Beiwe Research Platform
+Version: 0.1.0
+Authors@R: as.person(c(
+    "Mathew Kiang <mathew.kiang@gmail.com> [aut, cre]"
+    ))
+Description: Beiwe Research Platform collects high-density data from 
+    smartphone sensors. An important part of this data collection is 
+    analyzing and understanding the rates of data collection for each sensor
+    and user. metabeiwe assists in working with this metadata.
+URL: http://github.com/mkiang/metabeiwe
+BugReports: http://github.com/mkiang/metabeiwe/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000

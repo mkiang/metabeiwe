@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • metabeiwe</title>
+<title>Combine csv files into a single dataframe, removing sensor data — tidy_merge • metabeiwe</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -37,7 +37,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -78,88 +78,45 @@
       </header>
 
       <div class="row">
-  <div class="col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>
-        Reference
-        <small>version&nbsp;0.1.0</small>
-      </h1>
+    <h1>Combine csv files into a single dataframe, removing sensor data</h1>
     </div>
 
-    <div class="contents">
-      <table class="ref-index">
+    
+    <p>This helper function will read in all csv files, remove sensor data, and
+combine all files into a single dataframe.</p>
+    
 
-      <colgroup>
-        <col class="alias" />
-        <col class="title" />
-      </colgroup>
+    <pre class="usage"><span class='fu'>tidy_merge</span>(<span class='no'>file_list</span>, <span class='kw'>na</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>""</span>, <span class='st'>"NA"</span>, <span class='st'>"unknown"</span>))</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>file_list</th>
+      <td><p>a vector of file paths to be combined</p></td>
+    </tr>
+    <tr>
+      <th>na</th>
+      <td><p>a vector of values to read in as NA</p></td>
+    </tr>
+    </table>
+    
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-      <tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="bash_merge.html">bash_merge</a></code> </p>
-          </td>
-          <td><p>Merge all csv files within a directory into a single file</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="dot-count_data_lines.html">.count_data_lines</a></code> </p>
-          </td>
-          <td><p>Convenience function that takes path and returns the number of observations</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="dot-list_user_folders.html">.list_user_folders</a></code> </p>
-          </td>
-          <td><p>Helper that returns all the user folders for any given study folder</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="dot-parse_file_name.html">.parse_file_name</a></code> </p>
-          </td>
-          <td><p>Given a file path (in the original format), returns metadata about path</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="mkdir_p.html">mkdir_p</a></code> </p>
-          </td>
-          <td><p>Wrapper to make a directory (and subdirectories) if necessary</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="seq_date.html">seq_date</a></code> </p>
-          </td>
-          <td><p>Given a vector of Date objects, return a sequence from min to max</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="summarize_csv.html">summarize_csv</a></code> </p>
-          </td>
-          <td><p>Return metadata about a csv file</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="tidy_merge.html">tidy_merge</a></code> </p>
-          </td>
-          <td><p>Combine csv files into a single dataframe, removing sensor data</p></td>
-        </tr>
-      </tbody>
-      </table>
-    </div>
+    <p>a tibble with timestamp and `UTC time` columns</p>
+    
+
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
-    </ul>
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#value">Value</a></li>
+          </ul>
+
   </div>
 </div>
 

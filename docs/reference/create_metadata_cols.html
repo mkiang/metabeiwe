@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Combine csv files into a single dataframe, removing sensor data — tidy_merge • metabeiwe</title>
+<title>Takes a dataframe and file path and adds metadata to the dataframe — create_metadata_cols • metabeiwe</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -80,36 +80,31 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Combine csv files into a single dataframe, removing sensor data</h1>
+    <h1>Takes a dataframe and file path and adds metadata to the dataframe</h1>
     </div>
 
     
-    <p>This helper function will read in all csv files, remove sensor data, and
-combine all files into a single dataframe.</p>
+    <p>Takes a dataframe and file path and adds metadata to the dataframe</p>
     
 
-    <pre class="usage"><span class='fu'>tidy_merge</span>(<span class='no'>file_list</span>, <span class='kw'>na</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>""</span>, <span class='st'>"NA"</span>, <span class='st'>"unknown"</span>), <span class='kw'>metadata_only</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'>create_metadata_cols</span>(<span class='no'>df</span>, <span class='no'>file_path</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>file_list</th>
-      <td><p>a vector of file paths to be combined</p></td>
+      <th>df</th>
+      <td><p>dataframe to add metadata to (study_name, user_id, data_type)</p></td>
     </tr>
     <tr>
-      <th>na</th>
-      <td><p>a vector of values to read in as NA</p></td>
-    </tr>
-    <tr>
-      <th>metadata_only</th>
-      <td><p>if TRUE (default), subset to only time columns</p></td>
+      <th>file_path</th>
+      <td><p>path to the originating CSV file</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>a tibble with timestamp and `UTC time` columns</p>
+    <p>a dataframe with metadata columns</p>
     
 
   </div>

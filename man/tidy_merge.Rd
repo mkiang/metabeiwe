@@ -4,12 +4,14 @@
 \alias{tidy_merge}
 \title{Combine csv files into a single dataframe, removing sensor data}
 \usage{
-tidy_merge(file_list, na = c("", "NA", "unknown"))
+tidy_merge(file_list, na = c("", "NA", "unknown"), metadata_only = TRUE)
 }
 \arguments{
 \item{file_list}{a vector of file paths to be combined}
 
 \item{na}{a vector of values to read in as NA}
+
+\item{metadata_only}{if TRUE (default), subset to only time columns}
 }
 \value{
 a tibble with timestamp and `UTC time` columns

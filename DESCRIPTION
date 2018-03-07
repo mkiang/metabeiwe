@@ -21,7 +21,7 @@ Imports:
     dplyr,
     purrr,
     readr, 
-    tibble
+    tibble, 
+    lubridate
 Suggests:
-    lubridate,
     R.utils

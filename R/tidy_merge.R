@@ -11,16 +11,18 @@
 #' @export
 #'
 #' @importFrom dplyr select contains '%>%' bind_rows
-#' @importFrom readr read_csv
+#' @importFrom readr read_csv cols
 #' @importFrom purrr map reduce
 tidy_merge <- function(file_list, na = c("", "NA", "unknown"),
                        metadata_only = TRUE) {
 
     if (metadata_only) {
-        p_formula <- ~ readr::read_csv(.x, na = na) %>%
+        p_formula <- ~ readr::read_csv(.x, na = na,
+                                       col_types = readr::cols()) %>%
             dplyr::select(dplyr::contains("time"))
     } else {
-        p_formula <- ~ readr::read_csv(.x, na = na)
+        p_formula <- ~ readr::read_csv(.x, na = na,
+                                       col_types = readr::cols())
     }
 
     df <- file_list %>%

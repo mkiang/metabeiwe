@@ -14,6 +14,13 @@ The [Beiwe Research Platform](https://www.hsph.harvard.edu/onnela-lab/beiwe-rese
 
 A crucial part of working with Beiwe data is understanding and visualizing how much data is being collected per sensor per user. The `metabeiwe` package is designed to work with the *meta*data related to Beiwe data, but **not** the actual data itself.
 
+Installation
+------------
+
+Given the very narrow focus of this package, I have no plans to submit it to CRAN. It can be installed through [`devtools`](https://github.com/r-lib/devtools):
+
+    devtools::install_github("mkiang/metabeiwe")
+
 Sample Beiwe Data
 -----------------
 

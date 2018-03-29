@@ -12,5 +12,11 @@ if(getRversion() >= "2.15.1") {
 
 ## For misc_dplyr_helpers
 if(getRversion() >= "2.15.1") {
-    utils::globalVariables(c("time", "utc_orig", "UTC time"))
+    utils::globalVariables(c("time", "utc_orig", "UTC time",
+                             "t_delta", "time_gap"))
+}
+
+## Summarize_groupings
+if(getRversion() >= "2.15.1") {
+    utils::globalVariables(c("t_max", "t_min"))
 }

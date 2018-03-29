@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Create POSIX-compliant columns for dt components (e.g., year, hour, month) — create_time_cols • metabeiwe</title>
+<title>Summarize the groupings that you've already calculated — summarize_groupings • metabeiwe</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -80,28 +80,27 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Create POSIX-compliant columns for dt components (e.g., year, hour, month)</h1>
+    <h1>Summarize the groupings that you've already calculated</h1>
     </div>
 
     
-    <p>Given a dataframe with either `utc_orig` or `UTC time` column, adds five
-more columns: year, month, day, hour minute.</p>
+    <p>Summarize the groupings that you've already calculated</p>
     
 
-    <pre class="usage"><span class='fu'>create_time_cols</span>(<span class='no'>df</span>)</pre>
+    <pre class="usage"><span class='fu'>summarize_groupings</span>(<span class='no'>df</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>df</th>
-      <td><p>a dataframe with a timestamp column (`utc_orig` or `UTC time`)</p></td>
+      <td><p>a dataframe with grouping columns (see `create_grouping_cols()``)</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>a dataframe with five additional time columns</p>
+    <p>a summarized dataframe</p>
     
 
   </div>

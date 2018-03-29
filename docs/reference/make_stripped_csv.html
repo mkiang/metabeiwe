@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Create POSIX-compliant columns for dt components (e.g., year, hour, month) — create_time_cols • metabeiwe</title>
+<title>Given a CSV file returns an identical file with only timestamp data — make_stripped_csv • metabeiwe</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -80,28 +80,34 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Create POSIX-compliant columns for dt components (e.g., year, hour, month)</h1>
+    <h1>Given a CSV file returns an identical file with only timestamp data</h1>
     </div>
 
     
-    <p>Given a dataframe with either `utc_orig` or `UTC time` column, adds five
-more columns: year, month, day, hour minute.</p>
+    <p>In some instances, it may not be possible or desirable to merge all files
+first. This function will allow a researcher to strip away data on a file-
+specific basis. It is *much* slower than the functions that merge all files
+before reading them in or saving them (e.g., bash_merge() or tidy_merge()).</p>
     
 
-    <pre class="usage"><span class='fu'>create_time_cols</span>(<span class='no'>df</span>)</pre>
+    <pre class="usage"><span class='fu'>make_stripped_csv</span>(<span class='no'>csv_path</span>, <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='st'>"_stripped"</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>df</th>
-      <td><p>a dataframe with a timestamp column (`utc_orig` or `UTC time`)</p></td>
+      <th>csv_path</th>
+      <td><p>path to the csv file as a string</p></td>
+    </tr>
+    <tr>
+      <th>suffix</th>
+      <td><p>string to append to new csv file</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>a dataframe with five additional time columns</p>
+    <p>none</p>
     
 
   </div>

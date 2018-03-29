@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Create POSIX-compliant columns for dt components (e.g., year, hour, month) — create_time_cols • metabeiwe</title>
+<title>A convenience wrapper for list.dirs() with our more common defaults — .list_dirs • metabeiwe</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -80,28 +80,35 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Create POSIX-compliant columns for dt components (e.g., year, hour, month)</h1>
+    <h1>A convenience wrapper for list.dirs() with our more common defaults</h1>
     </div>
 
     
-    <p>Given a dataframe with either `utc_orig` or `UTC time` column, adds five
-more columns: year, month, day, hour minute.</p>
+    <p>A convenience wrapper for list.dirs() with our more common defaults</p>
     
 
-    <pre class="usage"><span class='fu'>create_time_cols</span>(<span class='no'>df</span>)</pre>
+    <pre class="usage"><span class='fu'>.list_dirs</span>(<span class='no'>folder</span>, <span class='kw'>full_path</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>recursive</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>df</th>
-      <td><p>a dataframe with a timestamp column (`utc_orig` or `UTC time`)</p></td>
+      <th>folder</th>
+      <td><p>file path to the study folder</p></td>
+    </tr>
+    <tr>
+      <th>full_path</th>
+      <td><p>return full paths (including study folder)? Default: FALSE</p></td>
+    </tr>
+    <tr>
+      <th>recursive</th>
+      <td><p>check paths recursively? Default: FALSE</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>a dataframe with five additional time columns</p>
+    <p>a vector of user folders</p>
     
 
   </div>
